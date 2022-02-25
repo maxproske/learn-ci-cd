@@ -1,0 +1,14 @@
+name: Deployment pipeline
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  lint_job:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: lint_step
+        run: npm run eslint
+        
