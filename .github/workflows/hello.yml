@@ -12,4 +12,12 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!"
-          
+      - name: Now it is
+        run: |
+          date"
+      - name: Directory contents
+        run: |
+          ls -la"
+      - name: Check disk space
+        run: |
+          df -h"   
